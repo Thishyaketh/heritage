@@ -13,7 +13,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Taj_Mahal_360°_View.jpg",
         questions: [
             { question: "Who commissioned the construction of the Taj Mahal?", options: ["Akbar", "Shah Jahan", "Jahangir", "Aurangzeb"], correct: 1, explanation: "Shah Jahan built the Taj Mahal in memory of his beloved wife Mumtaz Mahal." },
-            { question: "What river is the Taj Mahal located on?", options: ["Ganges", "Yamuna", "Brahmaputra", "Indus"], correct: 1, explanation: "The Taj Mahal is located on the south bank of the Yamuna river." }
+            { question: "What river is the Taj Mahal located on?", options: ["Ganges", "Yamuna", "Brahmaputra", "Indus"], correct: 1, explanation: "The Taj Mahal is located on the south bank of the Yamuna river." },
+            { question: "The Taj Mahal is constructed primarily from what material?", options: ["Red Sandstone", "Granite", "Ivory-White Marble", "Limestone"], correct: 2, explanation: "The Taj Mahal is renowned for its stunning ivory-white marble construction." },
+            { question: "For whom was the Taj Mahal built as a final resting place?", options: ["Shah Jahan's father", "His favorite wife, Mumtaz Mahal", "His daughter", "Himself"], correct: 1, explanation: "It was built to house the tomb of Shah Jahan's favorite wife, Mumtaz Mahal." }
         ]
     },
     {
@@ -30,7 +32,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Konark_Sun_Temple_360_View.jpg",
         questions: [
             { question: "The Konark Sun Temple is dedicated to which deity?", options: ["Shiva", "Vishnu", "Surya", "Brahma"], correct: 2, explanation: "The temple is dedicated to Surya, the Hindu sun god." },
-            { question: "How many wheels are on the chariot temple?", options: ["12", "24", "36", "48"], correct: 1, explanation: "The temple is designed as a chariot with 24 intricately carved wheels." }
+            { question: "How many wheels are on the chariot temple?", options: ["12", "24", "36", "48"], correct: 1, explanation: "The temple is designed as a chariot with 24 intricately carved wheels." },
+            { question: "The Konark Sun Temple is also known by what colorful name?", options: ["The White Pagoda", "The Golden Pagoda", "The Red Pagoda", "The Black Pagoda"], correct: 3, explanation: "Due to its dark color, European sailors called it 'The Black Pagoda' for navigation." },
+            { question: "Who is believed to have built the Konark Sun Temple?", options: ["King Ashoka", "Emperor Harsha", "King Narasimhadeva I", "Raja Raja Chola I"], correct: 2, explanation: "It was built by King Narasimhadeva I of the Eastern Ganga Dynasty." }
         ]
     },
     {
@@ -47,7 +51,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/2/23/Hampi_360_Panorama.jpg",
         questions: [
             { question: "Hampi was the capital of which empire?", options: ["Maurya", "Gupta", "Chola", "Vijayanagara"], correct: 3, explanation: "Hampi was the capital of the powerful Vijayanagara Empire." },
-            { question: "What is a famous feature of the Vittala Temple?", options: ["Golden roof", "Musical pillars", "Underground passages", "Tallest statue"], correct: 1, explanation: "The Vittala Temple is famous for its 56 musical pillars." }
+            { question: "What is a famous feature of the Vittala Temple?", options: ["Golden roof", "Musical pillars", "Underground passages", "Tallest statue"], correct: 1, explanation: "The Vittala Temple is famous for its 56 musical pillars." },
+            { question: "The ruins of Hampi are situated on the banks of which river?", options: ["Godavari", "Krishna", "Tungabhadra", "Kaveri"], correct: 2, explanation: "Hampi is located on the banks of the Tungabhadra River." },
+            { question: "Which temple in Hampi features a famous stone chariot?", options: ["Virupaksha Temple", "Vittala Temple", "Krishna Temple", "Hazara Rama Temple"], correct: 1, explanation: "The stone chariot is one of the most iconic structures of Hampi and is located in the Vittala Temple complex." }
         ]
     },
     {
@@ -64,7 +70,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Red_Fort_360_Panorama%2C_Delhi.jpg",
         questions: [
             { question: "Who built the Red Fort?", options: ["Akbar", "Shah Jahan", "Jahangir", "Aurangzeb"], correct: 1, explanation: "The Red Fort was built by the Mughal emperor Shah Jahan." },
-            { question: "What material is the Red Fort primarily made of?", options: ["Marble", "Granite", "Red sandstone", "Limestone"], correct: 2, explanation: "The fort is known for its massive enclosing walls of red sandstone." }
+            { question: "What material is the Red Fort primarily made of?", options: ["Marble", "Granite", "Red sandstone", "Limestone"], correct: 2, explanation: "The fort is known for its massive enclosing walls of red sandstone." },
+            { question: "What is the original name of the Red Fort?", options: ["Lal Kot", "Qila-i-Mubarak", "Shahjahanabad", "Agra Fort"], correct: 1, explanation: "The original name of the Red Fort was 'Qila-i-Mubarak' (the Blessed Fort)." },
+            { question: "On which national holiday does the Prime Minister of India hoist the flag at the Red Fort?", options: ["Republic Day (Jan 26)", "Gandhi Jayanti (Oct 2)", "Independence Day (Aug 15)", "Diwali"], correct: 2, explanation: "The Prime Minister hoists the national flag at the Red Fort on Independence Day." }
         ]
     },
     {
@@ -81,7 +89,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Qutub_Minar_360_degree_view.jpg",
         questions: [
             { question: "Who started the construction of the Qutub Minar?", options: ["Iltutmish", "Alauddin Khilji", "Qutab-ud-din Aibak", "Firoz Shah Tughlaq"], correct: 2, explanation: "Qutab-ud-din Aibak started the construction of the Qutub Minar." },
-            { question: "What is a notable feature of the Qutub Minar complex?", options: ["A large moat", "A non-rusting iron pillar", "A sound and light show", "A secret tunnel"], correct: 1, explanation: "The complex is home to a famous iron pillar that has resisted rust for centuries." }
+            { question: "What is a notable feature of the Qutub Minar complex?", options: ["A large moat", "A non-rusting iron pillar", "A sound and light show", "A secret tunnel"], correct: 1, explanation: "The complex is home to a famous iron pillar that has resisted rust for centuries." },
+            { question: "The Qutub Minar is built primarily from what materials?", options: ["Marble and Granite", "Red Sandstone and Marble", "Only Limestone", "Bricks and Mortar"], correct: 1, explanation: "The tower is made of red sandstone and marble." },
+            { question: "The Qutub Minar was built to celebrate the beginning of what in India?", options: ["The Gupta Empire", "The British Raj", "The Mughal Empire", "Muslim rule"], correct: 3, explanation: "It was built as a victory tower to celebrate the beginning of Muslim rule in India." }
         ]
     },
     {
@@ -98,7 +108,9 @@ const heritageSites = [
         panorama: null,
         questions: [
             { question: "In which Indian state are the Khajuraho temples located?", options: ["Rajasthan", "Uttar Pradesh", "Madhya Pradesh", "Maharashtra"], correct: 2, explanation: "The Khajuraho temples are located in the state of Madhya Pradesh." },
-            { question: "What architectural style are the Khajuraho temples known for?", options: ["Dravidian", "Nagara", "Vesara", "Kalinga"], correct: 1, explanation: "The temples are famous examples of Nagara-style architecture." }
+            { question: "What architectural style are the Khajuraho temples known for?", options: ["Dravidian", "Nagara", "Vesara", "Kalinga"], correct: 1, explanation: "The temples are famous examples of Nagara-style architecture." },
+            { question: "The Khajuraho temples were built by which dynasty?", options: ["Maurya", "Gupta", "Chandela", "Chola"], correct: 2, explanation: "They were built by the rulers of the Chandela dynasty." },
+            { question: "Besides Hindu temples, Khajuraho also has temples dedicated to which other religion?", options: ["Buddhism", "Sikhism", "Jainism", "Islam"], correct: 2, explanation: "The Khajuraho group of monuments includes a number of Jain temples." }
         ]
     },
     {
@@ -115,7 +127,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Ajanta_Caves_360_Panorama.jpg",
         questions: [
             { question: "The Ajanta Caves are primarily associated with which religion?", options: ["Hinduism", "Jainism", "Buddhism", "Sikhism"], correct: 2, explanation: "The Ajanta Caves are a series of Buddhist cave monuments." },
-            { question: "How were the Ajanta Caves rediscovered?", options: ["By a local farmer", "During a railway construction", "By a British hunting party", "Through an ancient map"], correct: 2, explanation: "The caves were accidentally rediscovered by a British officer on a tiger hunt in 1819." }
+            { question: "How were the Ajanta Caves rediscovered?", options: ["By a local farmer", "During a railway construction", "By a British hunting party", "Through an ancient map"], correct: 2, explanation: "The caves were accidentally rediscovered by a British officer on a tiger hunt in 1819." },
+            { question: "What are the Ajanta Caves most famous for?", options: ["Their height", "Their intricate paintings", "Underground rivers", "Gold statues"], correct: 1, explanation: "The caves are renowned for their magnificent paintings, which are masterpieces of Buddhist religious art." },
+            { question: "The paintings in the Ajanta Caves depict stories from what texts?", options: ["The Vedas", "The Mahabharata", "The Jataka tales", "The Ramayana"], correct: 2, explanation: "The paintings illustrate the Jataka tales, which are stories about the previous births of the Buddha." }
         ]
     },
     {
@@ -132,7 +146,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ellora_Caves_360_View%2C_Kailash_Temple.jpg",
         questions: [
             { question: "Which three religions are represented at the Ellora Caves?", options: ["Hinduism, Buddhism, Sikhism", "Hinduism, Buddhism, Jainism", "Buddhism, Jainism, Islam", "Hinduism, Jainism, Christianity"], correct: 1, explanation: "The Ellora Caves feature monuments from Hinduism, Buddhism, and Jainism." },
-            { question: "What is the most famous structure in the Ellora Caves?", options: ["The Great Stupa", "The Sun Temple", "The Kailasa Temple", "The Golden Temple"], correct: 2, explanation: "The Kailasa Temple (Cave 16) is the centerpiece of Ellora." }
+            { question: "What is the most famous structure in the Ellora Caves?", options: ["The Great Stupa", "The Sun Temple", "The Kailasa Temple", "The Golden Temple"], correct: 2, explanation: "The Kailasa Temple (Cave 16) is the centerpiece of Ellora." },
+            { question: "The Kailasa Temple is dedicated to which Hindu deity?", options: ["Vishnu", "Brahma", "Ganesha", "Shiva"], correct: 3, explanation: "The Kailasa Temple is a remarkable chariot-shaped monument dedicated to Lord Shiva." },
+            { question: "The construction of the monuments at Ellora spanned the rule of which dynasties?", options: ["Maurya and Gupta", "Rashtrakuta and Chalukya", "Chola and Pandya", "Mughal and Maratha"], correct: 1, explanation: "The caves were built during the rule of the Rashtrakuta and Chalukya dynasties." }
         ]
     },
     {
@@ -149,7 +165,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Golden_Temple_360_View%2C_Amritsar.jpg",
         questions: [
             { question: "The Golden Temple is the holiest shrine of which religion?", options: ["Hinduism", "Sikhism", "Jainism", "Buddhism"], correct: 1, explanation: "The Golden Temple is the pre-eminent spiritual site of Sikhism." },
-            { question: "In which city is the Golden Temple located?", options: ["Ludhiana", "Chandigarh", "Amritsar", "Patiala"], correct: 2, explanation: "The Golden Temple is located in the city of Amritsar, Punjab." }
+            { question: "In which city is the Golden Temple located?", options: ["Ludhiana", "Chandigarh", "Amritsar", "Patiala"], correct: 2, explanation: "The Golden Temple is located in the city of Amritsar, Punjab." },
+            { question: "What is the name of the holy tank of water surrounding the Golden Temple?", options: ["Ganga Sagar", "Pushkar Lake", "Amrit Sarovar", "Dal Lake"], correct: 2, explanation: "The temple is surrounded by a large holy tank known as the Amrit Sarovar (Pool of Nectar)." },
+            { question: "The community kitchen at the Golden Temple, which serves free meals to thousands daily, is called what?", options: ["Prasad", "Langar", "Bhandara", "Seva"], correct: 1, explanation: "The free community kitchen is famously known as 'Langar'." }
         ]
     },
     {
@@ -166,7 +184,9 @@ const heritageSites = [
         panorama: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Gateway_of_India_360_degree_view.jpg",
         questions: [
             { question: "The Gateway of India was built to commemorate the visit of which British monarch?", options: ["Queen Victoria", "King Edward VII", "King George V", "Queen Elizabeth II"], correct: 2, explanation: "The Gateway of India was built to commemorate the visit of King George V and Queen Mary." },
-            { question: "In which city is the Gateway of India located?", options: ["Delhi", "Kolkata", "Chennai", "Mumbai"], correct: 3, explanation: "The Gateway of India is located in Mumbai." }
+            { question: "In which city is the Gateway of India located?", options: ["Delhi", "Kolkata", "Chennai", "Mumbai"], correct: 3, explanation: "The Gateway of India is located in Mumbai." },
+            { question: "What is the architectural style of the Gateway of India?", options: ["Victorian Gothic", "Art Deco", "Indo-Saracenic", "Neoclassical"], correct: 2, explanation: "The monument is built in the Indo-Saracenic architectural style, combining Hindu and Islamic elements." },
+            { question: "The Gateway of India overlooks which body of water?", options: ["The Bay of Bengal", "The Indian Ocean", "The Arabian Sea", "The Yamuna River"], correct: 2, explanation: "It is located on the waterfront of the Arabian Sea in South Mumbai." }
         ]
     }
 ];
@@ -371,7 +391,8 @@ async function streamNGenPro(prompt) {
                     const data = JSON.parse(line.slice(6));
                     if (data.token) {
                         fullText += data.token;
-                        assistantMessage.innerText = fullText;
+                        // Use marked to parse markdown and DOMPurify to sanitize it
+                        assistantMessage.innerHTML = DOMPurify.sanitize(marked.parse(fullText));
                     }
                 } catch (e) {
                     // Skip invalid JSON
