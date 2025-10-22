@@ -25,26 +25,10 @@
             <section class="features-section">
                 <h2>Features</h2>
                 <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🏛️</div>
-                        <h4>Explore Sites</h4>
-                        <p>Discover iconic heritage locations.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🧠</div>
-                        <h4>Interactive Quizzes</h4>
-                        <p>Test your historical knowledge.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🏆</div>
-                        <h4>Earn Badges</h4>
-                        <p>Showcase your achievements.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🌐</div>
-                        <h4>3D Views</h4>
-                        <p>Experience sites in 360 degrees.</p>
-                    </div>
+                    <div class="feature-card"><div class="feature-icon">🏛️</div><h4>Explore Sites</h4><p>Discover iconic heritage locations.</p></div>
+                    <div class="feature-card"><div class="feature-icon">🧠</div><h4>Interactive Quizzes</h4><p>Test your historical knowledge.</p></div>
+                    <div class="feature-card"><div class="feature-icon">🏆</div><h4>Earn Badges</h4><p>Showcase your achievements.</p></div>
+                    <div class="feature-card"><div class="feature-icon">🌐</div><h4>3D Views</h4><p>Experience sites in 360 degrees.</p></div>
                 </div>
             </section>
         </div>
@@ -54,87 +38,48 @@
     <div id="map" class="screen">
         <h2>Heritage Map</h2>
         <p>Select an unlocked site to begin your exploration.</p>
-        <div class="progress-bar">
-            <div class="progress-fill" id="progressFill"></div>
-        </div>
-        <p id="progressText">Progress: 0/8 sites</p>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <p id="progressText">Progress: 0/10 sites</p>
         <div id="numberGrid" class="number-grid"></div>
-        <button class="btn" id="backToMenu">Back to Menu</button>
+        <button class="btn back-to-menu">Back to Menu</button>
     </div>
 
     <!-- Site Exploration Screen -->
     <div id="siteExploration" class="screen">
         <h2 id="siteName"></h2>
         <p id="siteLocation"></p>
-        <img id="siteDetailImage" src="" alt="Heritage Site" class="site-detail-image">
+        <div id="mediaContainer" class="media-container">
+            <!-- Image or A-Frame scene will be injected here -->
+        </div>
         <p id="siteDescription"></p>
         <div class="btn-container">
             <button id="takeQuizBtn" class="btn">Take Quiz</button>
-            <button id="view3DBtn" class="btn btn-3d">3D View</button>
+            <button id="toggleViewBtn" class="btn btn-3d">3D View</button>
             <button id="backToMap" class="btn btn-secondary">Back to Map</button>
         </div>
-    </div>
 
-    <!-- Quiz Screen -->
-    <div id="quiz" class="screen">
-        <div class="quiz-container">
-            <h3 id="quizQuestion"></h3>
-            <div id="quizOptions"></div>
-        </div>
-    </div>
-
-    <!-- Quiz Result Screen (Correct) -->
-    <div id="quizResult" class="screen">
-        <div class="result-screen correct">
-            <h2>Congratulations!</h2>
-            <p id="pointsEarned"></p>
-            <p id="totalPoints"></p>
-            <button id="continueExploring" class="btn">Continue Exploring</button>
-        </div>
-    </div>
-
-    <!-- Quiz Result Screen (Wrong) -->
-    <div id="quizWrong" class="screen">
-        <div class="result-screen wrong">
-            <h2>Incorrect</h2>
-            <p id="correctAnswer"></p>
-            <p id="explanation"></p>
-            <div class="btn-container">
-                <button id="retryQuizBtn" class="btn">Try Again</button>
-                <button id="backToSite" class="btn btn-secondary">Back to Site</button>
+        <!-- Chatbot Section -->
+        <div class="chat-container">
+            <h3>Ask the AI Guide</h3>
+            <div id="chatMessages" class="chat-messages"></div>
+            <div id="chatSuggestions" class="chat-suggestions">
+                <button class="suggestion-btn">Tell me a fun fact.</button>
+                <button class="suggestion-btn">What is the history of this place?</button>
+                <button class="suggestion-btn">Why is this place famous?</button>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Ask about this place...">
+                <button id="chatSendBtn">Send</button>
             </div>
         </div>
     </div>
 
-    <!-- Profile Screen -->
-    <div id="profile" class="screen">
-        <h2>Your Profile</h2>
-        <div class="profile-stats">
-            <div>
-                <h4>Points</h4>
-                <p id="playerPoints">0</p>
-            </div>
-            <div>
-                <h4>Sites Completed</h4>
-                <p id="sitesCompleted">0/8</p>
-            </div>
-        </div>
-        <h4>Badges Earned</h4>
-        <div id="badgesContainer"></div>
-        <button class="btn" onclick="showScreen('mainMenu')">Back to Menu</button>
-    </div>
-
-    <!-- About Screen -->
-    <div id="about" class="screen">
-        <h2>About HeritageAR</h2>
-        <p>This application is an interactive way to learn about and explore the rich cultural heritage of India. Test your knowledge, earn badges, and virtually visit these magnificent sites.</p>
-        <button class="btn" onclick="showScreen('mainMenu')">Back to Menu</button>
-    </div>
-
-    <!-- AR View Screen -->
-    <div id="arView" class="screen" style="display: none;">
-        <!-- A-Frame scene will be injected here -->
-    </div>
+    <!-- Other Screens: Quiz, Results, Profile, About -->
+    <div id="quiz" class="screen"><div class="quiz-container"><h3 id="quizQuestion"></h3><div id="quizOptions"></div></div></div>
+    <div id="quizResult" class="screen"><div class="result-screen correct"><h2>Congratulations!</h2><p id="pointsEarned"></p><p id="totalPoints"></p><button id="continueExploring" class="btn">Continue</button></div></div>
+    <div id="quizWrong" class="screen"><div class="result-screen wrong"><h2>Incorrect</h2><p id="correctAnswer"></p><p id="explanation"></p><div class="btn-container"><button id="retryQuizBtn" class="btn">Try Again</button><button id="backToSite" class="btn btn-secondary">Back to Site</button></div></div></div>
+    <div id="profile" class="screen"><h2>Your Profile</h2><div class="profile-stats"><div><h4>Points</h4><p id="playerPoints">0</p></div><div><h4>Sites Completed</h4><p id="sitesCompleted">0/10</p></div></div><h4>Badges Earned</h4><div id="badgesContainer"></div><button class="btn back-to-menu">Back to Menu</button></div>
+    <div id="about" class="screen"><h2>About HeritageAR</h2><p>This application is an interactive way to learn about India's cultural heritage. Explore sites, test your knowledge, and earn badges.</p><button class="btn back-to-menu">Back to Menu</button></div>
 
     <script src="script.js"></script>
 </body>
